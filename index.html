@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png"></h2>
+           <div class="row" id="hoverBox">
+            <input type="text" placeholder="Add your text" id="input-box">
+            <button onclick="addTask()">Add</button>
+           </div>
+           <ul id="list-container">
+            <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+           </ul>
+        </div>
+    </div>
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-content">
+            <img src="images/oops.png">
+            <h3 style="color: red; font-size: 2rem;">Alert</h3>
+            <p>You must enter something.</p>
+            <button id="closeAlert" onclick="hideCustomAlert()" style="margin-top: 1rem;">OK</button>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
